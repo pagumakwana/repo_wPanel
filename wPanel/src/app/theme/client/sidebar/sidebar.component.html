@@ -1,0 +1,124 @@
+<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+  
+      <!-- search form (Optional) -->
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+            </button>
+          </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+  
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">HEADER</li>
+        <!-- Optionally, you can add icons to the links -->
+        <li class="active"><a routerLink="/"><i class="fa fa-link"></i> <span>Dashboard</span></a></li>
+        <li class="treeview">
+          <a routerLink="#"><i class="fa fa-book"></i> <span>Catalog</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a routerLink="/catalog/category"><i class="fa fa-dot-circle-o"></i>Category</a></li>
+            <li><a routerLink="/catalog/brand"><i class="fa fa-dot-circle-o"></i>Brand</a></li>
+            <li><a routerLink="/catalog/manufacture"><i class="fa fa-dot-circle-o"></i>Manufacture</a></li>
+            <li><a routerLink="/catalog/sku"><i class="fa fa-dot-circle-o"></i>SKU</a></li>
+            <li><a routerLink="/catalog/measuretype"><i class="fa fa-dot-circle-o"></i>Measure Type</a></li>
+            <li><a routerLink="/catalog/measurename"><i class="fa fa-dot-circle-o"></i>Measure Name</a></li>
+            <li><a routerLink="/catalog/cuisines"><i class="fa fa-dot-circle-o"></i>Cuisines</a></li>
+            <li><a routerLink="/catalog/product/list"><i class="fa fa-dot-circle-o"></i>Product</a></li>
+            <!--         
+            <li><a routerLink="/catalog/inventory/list"><i class="fa fa-dot-circle-o"></i>Inventory</a></li>-->
+            <li><a routerLink="/catalog/recipe/list"><i class="fa fa-dot-circle-o"></i>Recipe</a></li>
+            <li><a routerLink="/catalog/generateqrcode"><i class="fa fa-dot-circle-o"></i>Generate QR Code</a></li>
+  
+          </ul>
+        </li>
+        <li class="treeview">
+          <a routerLink="#"><i class="fa fa-shopping-cart"></i><span>Sales</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a routerLink="/sales/manageorder"><i class="fa fa-dot-circle-o"></i>Orders</a></li>
+            <li><a routerLink="#"><i class="fa fa-dot-circle-o"></i>Shopping carts and wishlists</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a routerLink="#"><i class="fa fa-users"></i><span>Customers</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a routerLink="/customer/customerList"><i class="fa fa-dot-circle-o"></i>Customers</a></li>
+            <li><a routerLink="#"><i class="fa fa-dot-circle-o"></i>Customers Role</a></li>
+            <li><a routerLink="#"><i class="fa fa-dot-circle-o"></i>Online Customers</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a routerLink="#"><i class="fa fa-tags"></i><span>Promotions</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a routerLink="/prmotions/discounts"><i class="fa fa-dot-circle-o"></i>Discount</a></li>
+            <li><a routerLink="/prmotions/campaigns"><i class="fa fa-dot-circle-o"></i>Campaigns</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a routerLink="#"><i class="fa fa-cubes"></i><span>Content management</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a routerLink="#"><i class="fa fa-dot-circle-o"></i>Message templates</a></li>
+            <li><a routerLink="communication/addmodifytemplate"><i class="fa fa-dot-circle-o"></i>Add Modify Template</a>
+            </li>
+            <li><a routerLink="communication/addmodifytemplatekey"><i class="fa fa-dot-circle-o"></i>Add Modify Template
+                Key</a>
+            </li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a routerLink="#"><i class="fa fa-gears"></i><span>Manage Masters</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a routerLink="/managemaster/usermaster/list"><i class="fa fa-dot-circle-o"></i>UserMaster</a></li>
+            <li><a routerLink="/managemaster/usermasterdata/list"><i class="fa fa-dot-circle-o"></i>UserMasterData</a>
+            </li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a routerLink="#"><i class="fa fa-line-chart"></i><span>Reports</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a routerLink="#"><i class="fa fa-dot-circle-o"></i>Low stock</a></li>
+            <li><a routerLink="#"><i class="fa fa-dot-circle-o"></i>Bestseller</a></li>
+            <li><a routerLink="#"><i class="fa fa-dot-circle-o"></i>Products never purchased</a></li>
+          </ul>
+        </li>
+        <li><a routerLink="#"><i class="fa fa-support"></i>Support Ticket</a></li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
